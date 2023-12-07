@@ -253,3 +253,10 @@ For dynamic configuration, it's simpler. We keep the same configuration as befor
 
 - Try now one `http://localhost:8888/SERVICE-CLIENT/api/client`
 
+# Task to be Done
+
+The two microservices need to communicate in order to maintain data coherence. Here is the class diagram of our application:
+
+[![Whats-App-Image-2023-12-07-at-22-56-48.jpg](https://i.postimg.cc/WbWH5vxM/Whats-App-Image-2023-12-07-at-22-56-48.jpg)](https://postimg.cc/F7SpK2rR)
+
+

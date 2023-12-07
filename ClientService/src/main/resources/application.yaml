@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: SERVICE-CLIENT
+  datasource:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/cientservicedb?createDatabaseIfNotExist=true
+      username: "root"
+      password: "energystar10"
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+

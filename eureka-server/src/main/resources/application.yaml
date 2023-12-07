@@ -1,0 +1,7 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false #you can tell the EUREKA server not to register itself as an instance
+    fetch-registry: false #if there aren?t other Eureka servers when in development mode,
+      #you?re setting them to false so that Eureka won?t try to reach out to other Eureka servers

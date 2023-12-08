@@ -14,7 +14,7 @@ This repository contains the necessary resources for the hands-on workshop aimed
 - in the application.properties add the following lines 
 ```yaml
 server:
-    port: 8081
+    port: 8761
 eureka:
     client:
         register-with-eureka: false

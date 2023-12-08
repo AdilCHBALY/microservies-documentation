@@ -169,7 +169,7 @@ public class ClientController {
 
 
 
-# Creation of Client Service
+# Creation of API Gateway
 
 - Create a new project in Spring Initialzr
 [![image-2023-12-07-202814248.png](https://i.postimg.cc/BZ8kw97G/image-2023-12-07-202814248.png)](https://postimg.cc/5jVs6GMP)

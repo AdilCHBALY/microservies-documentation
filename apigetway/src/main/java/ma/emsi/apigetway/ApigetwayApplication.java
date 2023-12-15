@@ -12,19 +12,20 @@ import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 @SpringBootApplication
 public class ApigetwayApplication {
 
-    /*@Bean
+    @Bean
     RouteLocator routes(RouteLocatorBuilder builder){
         return builder.routes()
                 .route(r->r.path("/api/client/**").uri("lb://SERVICE-CLIENT"))
+                .route(r->r.path("/api/car/**").uri("lb://SERVICE-CAR"))
                 .build();
-    }*/
+    }
 
-    @Bean
+    /*@Bean
     DiscoveryClientRouteDefinitionLocator routesDynamic(
             ReactiveDiscoveryClient reactiveDiscoveryClient,
             DiscoveryLocatorProperties discoveryLocatorProperties){
         return new DiscoveryClientRouteDefinitionLocator(reactiveDiscoveryClient,discoveryLocatorProperties);
-    }
+    }*/
 
     public static void main(String[] args) {
         SpringApplication.run(ApigetwayApplication.class, args);

@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/client")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ClientController {
     @Autowired
     private ClientServiceImpl service;
@@ -22,4 +23,9 @@ public class ClientController {
     public Client findById(@PathVariable Long id) throws Exception {return service.findById(id);}
     @PostMapping
     public void addClient(@RequestBody Client client){service.addClient(client);}
+    @DeleteMapping("/{id}")
+    public void deleteClient(@PathVariable Long id) throws Exception {service.delete(id);}
+
+    @PutMapping("/{id}")
+    public void updateClient(@RequestBody Client client,@PathVariable Long id) throws Exception {service.update(client,id);}
 }

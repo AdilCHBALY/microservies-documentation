@@ -21,8 +21,8 @@ public class CarController {
     @Autowired
     private CarService carService;
     @GetMapping
-    public String findAll(){
-        return "Test";
+    public List<CarResponse> findAll(){
+        return carService.findAll();
     }
 
     @GetMapping("/{id}")

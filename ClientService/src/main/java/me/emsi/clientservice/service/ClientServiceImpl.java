@@ -23,4 +23,18 @@ public class ClientServiceImpl implements ClientService{
     public void addClient(Client client) {
         clientRepository.save(client);
     }
+
+    @Override
+    public void delete(Long id) throws Exception {
+        Client deletedClient = clientRepository.findById(id).orElseThrow(()->new Exception("Invalid Id"));
+        clientRepository.delete(deletedClient);
+    }
+
+    @Override
+    public void update(Client client, Long id) throws Exception {
+        Client currentClient = clientRepository.findById(id).orElseThrow(()->new Exception("Invalid Client ID"));
+        currentClient.setAge(client.getAge());
+        currentClient.setName(client.getName());
+        clientRepository.save(currentClient);
+    }
 }
